@@ -25,6 +25,8 @@ local config = {
       "/usr/bin/lxqt-policykit-agent &" .. " eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)",
       -- Load X colors
       "xrdb $HOME/.Xresources",
+      -- Keyboard layout
+      "setxkbmap -option grp:alt_shift_toggle us,ir",
       -- Audio equalizer
       "pulseeffects --gapplication-service",
       -- Lockscreen timer
